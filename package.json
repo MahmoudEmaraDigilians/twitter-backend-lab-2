@@ -1,0 +1,33 @@
+{
+  "name": "twitter-backend-lab-2",
+  "version": "1.0.0",
+  "description": "Twitter Backend for Lab 2",
+  "keywords": [
+    "Twitter"
+  ],
+  "homepage": "https://github.com/MahmoudEmaraDigilians/twitter-backend-lab-2#readme",
+  "bugs": {
+    "url": "https://github.com/MahmoudEmaraDigilians/twitter-backend-lab-2/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MahmoudEmaraDigilians/twitter-backend-lab-2.git"
+  },
+  "license": "ISC",
+  "author": "Mahmoud Emara",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.6.2",
+    "validator": "^13.15.35"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
