@@ -6,11 +6,11 @@ const router = express.Router()
 router.get('/feed', tweetController.userFeed)
 
 // // Create a new tweet
-router.post('/', tweetController.testMethod)
+router.post('/', tweetController.createTweet)
 
 router.route('/:id')
-    .get(tweetController.testMethod) // Get Tweet Details 
-    .put(tweetController.testMethod) // Edit Tweet
-    .delete(tweetController.testMethod) // Delete Tweet
+    .get(tweetController.getTweet) // Get Tweet Details 
+    .patch(tweetController.updateTweet) // Edit Tweet
+    .delete(tweetController.deleteTweet) // Delete Tweet
 
 module.exports = router
